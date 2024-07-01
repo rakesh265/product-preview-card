@@ -4,13 +4,9 @@
 :root {
   --Dark-cyan: hsl(158, 36%, 37%);
   --Cream: hsl(30, 38%, 92%);
-
   --Very-dark-blue: hsl(212, 21%, 14%);
   --Dark-grayish-blue: hsl(228, 12%, 48%);
   --White: hsl(0, 0%, 100%);
-
-  /* font */
-
   --Montserrat: "Montserrat", sans-serif;
   --Fraunces: "Fraunces", serif;
 }
@@ -36,8 +32,8 @@ body {
 .product-container {
   background-color: var(--White);
   max-width: 400px;
-  height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .desktop-img {
@@ -46,7 +42,6 @@ body {
 
 .mobile-img {
   max-width: 100%;
-  height: auto;
 }
 
 .details {
@@ -58,11 +53,10 @@ body {
 .type {
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: var(--Montserrat);
   font-size: 12px;
   font-weight: 500;
   color: var(--Dark-grayish-blue);
-  padding: 0px 0px 5px 10px;
+  padding-bottom: 5px;
 }
 
 .title {
@@ -70,22 +64,20 @@ body {
   font-family: var(--Fraunces);
   font-weight: 700;
   color: var(--Very-dark-blue);
-  padding: 10px 0px 5px 10px;
+  padding: 10px 0px 5px ;
 }
 
-.descrption {
-  font-family: var(--Montserrat);
+.description {
   font-size: 14px;
   font-weight: 500;
-  color: var(--Dark-grayish-blue);
   line-height: 25px;
-  padding: 10px 0px 30px 10px;
+  padding: 10px 0px 20px 10px;
 }
 
 .price {
   display: flex;
   align-items: center;
-  padding: 0px 0px 15px 10px;
+  padding-bottom: 15px;
 }
 
 .sale-price {
@@ -106,9 +98,7 @@ button {
   border: none;
   max-width: 400px;
   height: 60px;
-  padding: 0px 0px 5px 10px;
   border-radius: 10px;
-  font-family: var(--Montserrat);
   font-weight: 700;
   display: flex;
   justify-content: center;
