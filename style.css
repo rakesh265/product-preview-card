@@ -32,7 +32,7 @@ body {
 .product-container {
   background-color: var(--White);
   max-width: 400px;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -56,7 +56,7 @@ body {
   font-size: 12px;
   font-weight: 500;
   color: var(--Dark-grayish-blue);
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .title {
@@ -64,20 +64,20 @@ body {
   font-family: var(--Fraunces);
   font-weight: 700;
   color: var(--Very-dark-blue);
-  padding: 10px 10px 0px 10px ;
+  padding: 10px 10px 10px 10px ;
 }
 
 .description {
   font-size: 14px;
   font-weight: 500;
   line-height: 25px;
-  padding: 10px 10px 20px 10px;
+  padding: 10px 10px 25px 10px;
 }
 
 .price {
   display: flex;
   align-items: center;
-  padding: 0px 10px 15px 10px;
+  padding: 0px 10px 25px 10px;
 }
 
 .sale-price {
@@ -109,4 +109,26 @@ button {
 
 .cart{
   margin-right: 10px;
+}
+
+
+@media screen and (min-width:426px) {
+  .product-container{
+    display: flex;
+    max-width: 600px;
+  }
+
+  .mobile-img{
+    display: none;
+  }
+
+  .desktop-img{
+    display: inline;
+    width: 300px;
+    height: 100%;
+  }
+
+  .details{
+    padding: 20px;
+  }
 }
